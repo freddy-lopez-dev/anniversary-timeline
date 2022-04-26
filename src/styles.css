@@ -54,3 +54,67 @@ body {
   cursor: pointer;
   margin-bottom: 0.5em;
 }
+
+.image-container {
+  position: absolute;
+  display: none;
+}
+
+img {
+  position: absolute;
+}
+
+.wed1 {
+  top: 200px;
+  left: 100px;
+  width: 250px;
+  opacity: 90%;
+  transform: rotate(-20deg);
+}
+
+.wed2 {
+  top: 100px;
+  left: 500px;
+  width: 250px;
+  opacity: 90%;
+}
+
+.wed3 {
+  top: 500px;
+  left: 400px;
+  width: 250px;
+  opacity: 90%;
+  transform: rotate(40deg);
+}
+
+.wed4 {
+  top: 100px;
+  left: 1200px;
+  width: 250px;
+  opacity: 90%;
+}
+
+.wed5 {
+  top: 100px;
+  left: 1550px;
+  width: 250px;
+  opacity: 90%;
+  transform: rotate(40deg);
+}
+
+.wed6 {
+  top: 500px;
+  left: 1350px;
+  width: 250px;
+  opacity: 90%;
+}
+
+.wed1, .wed2, .wed3, .wed4, .wed5, .wed6 {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  90% {opacity:0.8;}
+}
+
