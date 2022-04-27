@@ -73,6 +73,12 @@ body {
   animation: fadeIn 3s;
 }
 
+.image-container2020 {
+  position: absolute;
+  display: none;
+  animation: fadeIn 3s;
+}
+
 @keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
@@ -87,40 +93,40 @@ img {
   position: absolute;
 }
 
-.wed1, .img2018-1, .img2019-1 {
+.wed1, .img2018-1, .img2019-1, .img2020-1 {
   top: 200px;
   left: 100px;
   width: 250px;
   transform: rotate(-20deg);
 }
 
-.wed2, .img2018-2, .img2019-2 {
+.wed2, .img2018-2, .img2019-2, .img2020-2 {
   top: 100px;
   left: 500px;
   width: 250px;
 }
 
-.wed3, .img2018-3, .img2019-3 {
+.wed3, .img2018-3, .img2019-3, .img2020-3 {
   top: 500px;
   left: 400px;
   width: 250px;
   transform: rotate(40deg);
 }
 
-.wed4, .img2018-4, .img2019-4 {
+.wed4, .img2018-4, .img2019-4, .img2020-4 {
   top: 100px;
   left: 1200px;
   width: 250px;
 }
 
-.wed5, .img2018-5, .img2019-5 {
+.wed5, .img2018-5, .img2019-5, .img2020-5 {
   top: 100px;
   left: 1550px;
   width: 250px;
   transform: rotate(40deg);
 }
 
-.wed6, .img2018-6, .img2019-6 {
+.wed6, .img2018-6, .img2019-6, .img2020-6 {
   top: 500px;
   left: 1350px;
   width: 250px;
