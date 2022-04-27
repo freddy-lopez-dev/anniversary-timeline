@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Josefin Slab', serif;
 }
 
 body {
@@ -12,47 +12,26 @@ body {
   filter: blur(100%);
 }
 
-.countdown {
-  position: fixed;
-  top: 700px;
-  text-align: center;
-  width: 30vw;
-  color: white;
-}
-
-.timer {
-  margin-top: 2em;
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.timeline {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-}
-
 .current-year {
-  color: green;
+  color: #0f2563;
   font-size: 100px;
+  font-weight: 700;
 }
 
 .future-year {
-  color: green;
+  color: #040F2C;
   font-size: 40px;
   cursor: pointer;
   margin-top: 0.5em;
+  font-weight: 700;
 }
 
 .previous-year {
-  color: green;
+  color: #040F2C;
   font-size: 40px;
   cursor: pointer;
   margin-bottom: 0.5em;
+  font-weight: 700;
 }
 
 .image-container2017 {
@@ -92,53 +71,93 @@ body {
 }
 
 @keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeOut {
-  0% {opacity:1;}
-  100% {opacity:0;}
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 img {
   position: absolute;
 }
 
-.wed1, .img2018-1, .img2019-1, .img2020-1, .img2021-1, .img2022-1 {
+.wed1,
+.img2018-1,
+.img2019-1,
+.img2020-1,
+.img2021-1,
+.img2022-1 {
   top: 200px;
   left: 100px;
   width: 250px;
   transform: rotate(-20deg);
 }
 
-.wed2, .img2018-2, .img2019-2, .img2020-2, .img2021-2, .img2022-2 {
+.wed2,
+.img2018-2,
+.img2019-2,
+.img2020-2,
+.img2021-2,
+.img2022-2 {
   top: 100px;
   left: 500px;
   width: 250px;
 }
 
-.wed3, .img2018-3, .img2019-3, .img2020-3, .img2021-3, .img2022-3 {
+.wed3,
+.img2018-3,
+.img2019-3,
+.img2020-3,
+.img2021-3,
+.img2022-3 {
   top: 500px;
   left: 400px;
   width: 250px;
   transform: rotate(40deg);
 }
 
-.wed4, .img2018-4, .img2019-4, .img2020-4, .img2021-4, .img2022-4 {
+.wed4,
+.img2018-4,
+.img2019-4,
+.img2020-4,
+.img2021-4,
+.img2022-4 {
   top: 100px;
   left: 1200px;
   width: 250px;
 }
 
-.wed5, .img2018-5, .img2019-5, .img2020-5, .img2021-5, .img2022-5 {
+.wed5,
+.img2018-5,
+.img2019-5,
+.img2020-5,
+.img2021-5,
+.img2022-5 {
   top: 100px;
   left: 1550px;
   width: 250px;
   transform: rotate(40deg);
 }
 
-.wed6, .img2018-6, .img2019-6, .img2020-6, .img2021-6, .img2022-6 {
+.wed6,
+.img2018-6,
+.img2019-6,
+.img2020-6,
+.img2021-6,
+.img2022-6 {
   top: 500px;
   left: 1350px;
   width: 250px;
@@ -151,3 +170,57 @@ img {
   transform: rotate(30deg);
 }
 
+.countdown {
+  position: fixed;
+  top: 650px;
+  left: 50px;
+  text-align: center;
+  width: 30vw;
+  color: white;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.timer {
+  margin-top: 2em;
+  text-align: center;
+  display: flex;
+  justify-content: center
+}
+
+.seconds,
+.minutes,
+.hours,
+.days {
+  background-color: #040F2C;
+  font-size: 20px;
+  width: 100px;
+  color: whitesmoke;
+  border-radius: 5px;
+  margin-right: 1em;
+  padding: 1em;
+}
+
+.svalue,
+.mvalue,
+.hvalue,
+.dvalue {
+  font-size: 30px;
+  color: whitesmoke
+}
+
+.titleTimer {
+  font-size: 30px;
+}
+
+.spotify {
+  margin-top: 2em;
+  height: 50px;
+}
