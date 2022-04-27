@@ -9,6 +9,7 @@ const imageContainer18 = document.querySelector('.image-container2018');
 const imageContainer19 = document.querySelector('.image-container2019');
 const imageContainer20 = document.querySelector('.image-container2020');
 const imageContainer21 = document.querySelector('.image-container2021');
+const imageContainer22 = document.querySelector('.image-container2022');
 
 setTimeout(nextYear, 3000);
 setTimeout(prevYear, 3000);
@@ -88,8 +89,18 @@ function checkMinYear() {
     previousYearEl.style.display = 'block';
     imageContainer20.style.animation = 'fadeOut 3s';
     setTimeout(hide2020, 2500);
+    imageContainer22.style.animation = 'fadeOut 3s';
+    setTimeout(hide2022, 2500);
     imageContainer21.style.animation = 'fadeIn 3s';
     imageContainer21.style.display = 'block';
+  }
+
+  if (currentYear === 2022) {
+    previousYearEl.style.display = 'block';
+    imageContainer21.style.animation = 'fadeOut 3s';
+    setTimeout(hide2021, 2500);
+    imageContainer22.style.animation = 'fadeIn 3s';
+    imageContainer22.style.display = 'block';
   }
 }
 
@@ -119,4 +130,8 @@ function hide2020() {
 
 function hide2021() {
   imageContainer21.style.display = 'none';
+}
+
+function hide2022() {
+  imageContainer22.style.display = 'none';
 }
