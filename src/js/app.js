@@ -6,6 +6,7 @@ const futureYearEl = document.querySelector('.future-year');
 const previousYearEl = document.querySelector('.previous-year');
 const imageContainer17 = document.querySelector('.image-container2017');
 const imageContainer18 = document.querySelector('.image-container2018');
+const imageContainer19 = document.querySelector('.image-container2019');
 
 futureYearEl.addEventListener('click', () => {
   currentYear++;
@@ -46,8 +47,18 @@ function checkMinYear() {
     previousYearEl.style.display = 'block';
     imageContainer17.style.animation = 'fadeOut 3s';
     setTimeout(hide2017, 2500);
+    imageContainer19.style.animation = 'fadeOut 3s';
+    setTimeout(hide2019, 2500);
     imageContainer18.style.animation = 'fadeIn 3s';
     imageContainer18.style.display = 'block';
+  }
+
+  if (currentYear === 2019) {
+    previousYearEl.style.display = 'block';
+    imageContainer18.style.animation = 'fadeOut 3s';
+    setTimeout(hide2018, 2500);
+    imageContainer19.style.animation = 'fadeIn 3s';
+    imageContainer19.style.display = 'block';
   }
 }
 
@@ -65,4 +76,8 @@ function hide2017() {
 
 function hide2018() {
   imageContainer18.style.display = 'none';
+}
+
+function hide2019() {
+  imageContainer19.style.display = 'none';
 }

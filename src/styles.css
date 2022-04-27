@@ -67,64 +67,69 @@ body {
   animation: fadeIn 3s;
 }
 
+.image-container2019 {
+  position: absolute;
+  display: none;
+  animation: fadeIn 3s;
+}
+
 @keyframes fadeIn {
   0% {opacity:0;}
-  90% {opacity:0.8;}
+  100% {opacity:1;}
 }
 
 @keyframes fadeOut {
-  0% {opacity:0.8;}
-  90% {opacity:0;}
+  0% {opacity:1;}
+  100% {opacity:0;}
 }
 
 img {
   position: absolute;
 }
 
-.wed1, .img2018-1 {
+.wed1, .img2018-1, .img2019-1 {
   top: 200px;
   left: 100px;
   width: 250px;
-  opacity: 90%;
   transform: rotate(-20deg);
 }
 
-.wed2, .img2018-2 {
+.wed2, .img2018-2, .img2019-2 {
   top: 100px;
   left: 500px;
   width: 250px;
-  opacity: 90%;
 }
 
-.wed3, .img2018-3 {
+.wed3, .img2018-3, .img2019-3 {
   top: 500px;
   left: 400px;
   width: 250px;
-  opacity: 90%;
   transform: rotate(40deg);
 }
 
-.wed4, .img2018-4 {
+.wed4, .img2018-4, .img2019-4 {
   top: 100px;
   left: 1200px;
   width: 250px;
-  opacity: 90%;
 }
 
-.wed5, .img2018-5 {
+.wed5, .img2018-5, .img2019-5 {
   top: 100px;
   left: 1550px;
   width: 250px;
-  opacity: 90%;
   transform: rotate(40deg);
 }
 
-.wed6, .img2018-6 {
+.wed6, .img2018-6, .img2019-6 {
   top: 500px;
   left: 1350px;
   width: 250px;
-  opacity: 90%;
 }
 
-
+.img2019-7 {
+  left: 1600px;
+  top: 600px;
+  width: 250px;
+  transform: rotate(30deg);
+}
 
