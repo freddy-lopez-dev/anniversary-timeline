@@ -394,6 +394,7 @@ img {
   .titleSpotify {
     margin-top: 2em;
     color: white;
+    width: 400px;
   }
 
   .countdown {
