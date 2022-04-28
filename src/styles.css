@@ -171,6 +171,7 @@ img {
 }
 
 .countdown {
+  display: none;
   position: fixed;
   top: 650px;
   left: 50px;
@@ -223,4 +224,146 @@ img {
 .spotify {
   margin-top: 2em;
   height: 50px;
+  width: 460px;
+  margin-left: 3em;
+}
+
+@media only screen and (max-width: 380px) {
+  .countdown {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    color: white;
+  }
+
+  body {
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  .titleTimer {
+    margin-top: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .timer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seconds,
+  .minutes,
+  .hours,
+  .days {
+    margin-right: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .spotify {
+    margin-left: 0;
+    width: 100vw;
+  }
+
+  .timeline {
+    margin-top: 2em;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .current-year {
+    font-size: 60px;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+  .previous-year {
+    margin-bottom: 0;
+    margin-top: 1em;
+    font-size: 30px;
+  }
+
+  .future-year {
+    margin-top: 1em;
+    font-size: 30px;
+  }
+
+  .wed1,
+  .img2018-1,
+  .img2019-1,
+  .img2020-1,
+  .img2021-1,
+  .img2022-1 {
+    top: 300px;
+    left: 50px;
+    width: 150px;
+    transform: rotate(-20deg);
+  }
+
+  .wed2,
+  .img2018-2,
+  .img2019-2,
+  .img2020-2,
+  .img2021-2,
+  .img2022-2 {
+    top: 100px;
+    left: 90px;
+    width: 150px;
+    z-index: 1;
+  }
+
+  .wed3,
+  .img2018-3,
+  .img2019-3,
+  .img2020-3,
+  .img2021-3,
+  .img2022-3 {
+    top: 450px;
+    left: 160px;
+    width: 150px;
+    transform: rotate(40deg);
+    z-index: 1;
+  }
+
+  .wed4,
+  .img2018-4,
+  .img2019-4,
+  .img2020-4,
+  .img2021-4,
+  .img2022-4 {
+    top: 250px;
+    left: 200px;
+    width: 150px;
+  }
+
+  .wed5,
+  .img2018-5,
+  .img2019-5,
+  .img2020-5,
+  .img2021-5,
+  .img2022-5 {
+    top: 520px;
+    left: 50px;
+    width: 150px;
+    transform: rotate(-40deg);
+  }
+
+  .wed6,
+  .img2018-6,
+  .img2019-6,
+  .img2020-6,
+  .img2021-6,
+  .img2022-6 {
+    top: 630px;
+    left: 200px;
+    width: 150px;
+  }
+
+  .img2019-7 {
+    left: 1600px;
+    top: 600px;
+    width: 150px;
+    transform: rotate(30deg);
+  }
 }
