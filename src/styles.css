@@ -221,6 +221,10 @@ img {
   font-size: 30px;
 }
 
+.titleSpotify {
+  font-size: 30px;
+}
+
 .spotify {
   margin-top: 2em;
   height: 50px;
@@ -269,6 +273,7 @@ img {
   }
 
   .spotify {
+    margin-top: 0;
     margin-left: 0;
     width: 100vw;
   }
@@ -414,6 +419,7 @@ img {
   }
 
   .spotify {
+    margin-top: 0;
     margin-left: 0;
     width: 100vw;
   }
