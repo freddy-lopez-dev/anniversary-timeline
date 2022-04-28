@@ -1,4 +1,6 @@
-var countDownDate = new Date("May 7, 2022 00:00:00").getTime();
+var countDownDate = new Date("May 07, 2022 00:00:00").getTime();
+const countdownEl = document.querySelector('.countdown');
+const timelineEl = document.querySelector('.timeline');
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -24,6 +26,10 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    countdownEl.style.animation = 'fadeOut 2s';
+    countdownEl.style.display = 'none';
+    timelineEl.style.animation = 'fadeIn 2s';
+    timelineEl.style.display = 'flex';
+    printYear();
   }
 }, 1000);
