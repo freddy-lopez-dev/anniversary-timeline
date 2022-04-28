@@ -49,7 +49,7 @@ function printYear() {
 function checkMinYear() {
   if (currentYear === 2017) {
     previousYearEl.style.display = 'none';
-    imageContainer17.style.display = 'block';
+    imageContainer17.style.display = 'none';
     imageContainer17.style.animation = 'fadeIn 3s';
     imageContainer18.style.animation = 'fadeOut 3s';
     setTimeout(hide2018, 2500);

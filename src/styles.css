@@ -171,7 +171,7 @@ img {
 }
 
 .countdown {
-  display: none;
+  display: block;
   position: fixed;
   top: 650px;
   left: 50px;
@@ -181,7 +181,7 @@ img {
 }
 
 .timeline {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -229,6 +229,12 @@ img {
 }
 
 @media only screen and (max-width: 380px) {
+  .titleTimer {
+    font-size: 30px;
+    color: #040F2C;
+    padding-left: 0;
+  }
+
   .countdown {
     position: relative;
     top: 0;
@@ -238,6 +244,7 @@ img {
   }
 
   body {
+    background-position: 55% 50%;
     background-size: auto;
     background-repeat: no-repeat;
   }
@@ -274,8 +281,6 @@ img {
 
   .current-year {
     font-size: 60px;
-    margin-right: 1em;
-    margin-left: 1em;
   }
 
   .previous-year {
@@ -296,7 +301,7 @@ img {
   .img2021-1,
   .img2022-1 {
     top: 300px;
-    left: 50px;
+    left: 30px;
     width: 150px;
     transform: rotate(-20deg);
   }
@@ -320,7 +325,7 @@ img {
   .img2021-3,
   .img2022-3 {
     top: 450px;
-    left: 160px;
+    left: 150px;
     width: 150px;
     transform: rotate(40deg);
     z-index: 1;
@@ -333,7 +338,7 @@ img {
   .img2021-4,
   .img2022-4 {
     top: 250px;
-    left: 200px;
+    left: 180px;
     width: 150px;
   }
 
@@ -344,7 +349,7 @@ img {
   .img2021-5,
   .img2022-5 {
     top: 520px;
-    left: 50px;
+    left: 30px;
     width: 150px;
     transform: rotate(-40deg);
   }
@@ -356,14 +361,14 @@ img {
   .img2021-6,
   .img2022-6 {
     top: 630px;
-    left: 200px;
+    left: 180px;
     width: 150px;
   }
 
   .img2019-7 {
-    left: 1600px;
-    top: 600px;
+    left: 20px;
+    top: 700px;
     width: 150px;
-    transform: rotate(30deg);
+    transform: rotate(0deg);
   }
 }
